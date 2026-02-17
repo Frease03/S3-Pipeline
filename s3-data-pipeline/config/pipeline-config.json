@@ -1,0 +1,22 @@
+{
+    "pipeline": {
+        "name": "s3-data-pipeline",
+        "version": "1.0.0",
+        "description": "Automated S3 data processing and archival pipeline"
+    },
+    "processing": {
+        "supported_formats": ["json", "csv"],
+        "max_file_size_mb": 100,
+        "batch_size": 1000
+    },
+    "retention": {
+        "processed_days": 30,
+        "archive_days": 90,
+        "glacier_days": 365
+    },
+    "notifications": {
+        "enabled": false,
+        "sns_topic_arn": "",
+        "alert_on_failure": true
+    }
+}

@@ -1,0 +1,15 @@
+aws_region            = "us-east-1"
+environment           = "dev"
+project_name          = "s3-data-pipeline"
+raw_bucket_name       = "mycompany-raw-data-dev"
+processed_bucket_name = "mycompany-processed-data-dev"
+archive_bucket_name   = "mycompany-archive-data-dev"
+lambda_memory_size    = 256
+lambda_timeout        = 300
+retention_days        = 30
+archive_days          = 90
+
+tags = {
+  Owner      = "DataTeam"
+  CostCenter = "Engineering"
+}
